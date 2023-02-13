@@ -9,11 +9,11 @@ HTTP 缓存通过资源复用，可以减轻服务器负担，显著提高网站
 
 以 Chrome 为例，打开新标签页后调出 DevTools，将功能切至 NetWork，首次访问  Google 搜索页面，能看到请求：
 
-![google_first_time](/HTTP缓存机制/google_first_time.png)
+[//]: # (![google_first_time]&#40;/HTTP缓存机制/google_first_time.png&#41;)
 
 `ctrl + r` 刷新页面，可看到请求：
 
-![google_next_time](/HTTP缓存机制/google_next_time.png)
+[//]: # (![google_next_time]&#40;/HTTP缓存机制/google_next_time.png&#41;)
 
 在 Size 一栏中，可以看到部分资源来自 Memory Cache，部分来自 Disk Cache，其余从服务器获取。在首次访问页面之后，浏览器会将资源缓存，后续访问这些资源时，可直接从缓存中获取，不必再从服务器下载。
 
