@@ -220,5 +220,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# idea
+# idea vscode
 .idea/
+.vscode/
