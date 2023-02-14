@@ -6,7 +6,7 @@ hero:
   text: Μη μου τους κύκλους τάραττε!
   tagline: ——´Αρχιμήδης
   image:
-    src: /Αρχιμήδης.png
+    src: /`Αρχιμήδης.png
     alt: VitePress
   actions:
     - theme: brand
