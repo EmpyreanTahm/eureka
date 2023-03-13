@@ -223,3 +223,6 @@ dist
 # idea vscode
 .idea/
 .vscode/
+
+# .vitepress cache
+docs/.vitepress/cache/

@@ -1,5 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
-body > *{
-    font-family: 'JetBrains Mono', monospace !important;
+:root {
+  --vp-c-brand: #e7af22;
+  --vp-c-text-code: #50a17a;
+}
+
+* {
+  font-family: "Ubuntu Mono", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif !important;
+}
+
+
+.medium-zoom-overlay {
+  z-index: 20;
+}
+
+.medium-zoom-image {
+  z-index: 21;
 }

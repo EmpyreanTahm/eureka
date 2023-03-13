@@ -4,14 +4,14 @@ layout: home
 hero:
   name: ευρηκα
   text: Μη μου τους κύκλους τάραττε!
-  tagline: ——´Αρχιμήδης
+  tagline: ---´Αρχιμήδης
   image:
     src: /`Αρχιμήδης.png
-    alt: VitePress
+    alt: Αρχιμήδης
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/what-is-vitepress
+      link: /算法/
     - theme: alt
       text: View on GitHub
       link: https://github.com/GeekKery/eureka
@@ -20,7 +20,7 @@ features:
   - icon: 🍚
     title: 基础
     details: 前端从业者需要掌握的基础知识。
-    link: '/基础/index'
+    link: '/基础篇/CSS/'
   - icon: 🍔
     title: 框架
     details: 前端框架基本知识梳理，一些思考和备忘。
@@ -50,15 +50,17 @@ features:
     details: 沵恏，迣鎅。
     link: '/随笔/index'
 ---
+
 <script setup>
 import {
   VPTeamPage,
   VPTeamPageTitle,
   VPTeamMembers
 } from 'vitepress/theme';
+
 const members = [
   {
-    avatar: '/avatar_GeekKery.png',
+    avatar: '/avatar-GeekKery.png',
     name: 'GeekKery',
     title: '行远自迩，登高自卑',
     links: [

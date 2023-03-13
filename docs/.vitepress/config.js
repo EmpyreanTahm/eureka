@@ -8,15 +8,13 @@ export default {
   themeConfig: {
     logo: '/logo.png',
     siteTitle: 'ευρηκα',
-    markdown: {
-      lineNumbers: true,
-    },
+    markdown: {lineNumbers: true,},
     lastUpdated: true,
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2023-PRESENT ευρηκα',
     },
-    ...algoliaConfig,
+    // ...algoliaConfig,
     ...navConfig,
     ...sidebarConfig
   },
