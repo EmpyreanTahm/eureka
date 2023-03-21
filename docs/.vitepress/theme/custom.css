@@ -1,15 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400');
 
-:root {
-  --vp-c-brand: #e7af22;
-  --vp-c-text-code: #50a17a;
+body,
+body * {
+  font-family: 'Fira Code', "Arial", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
 }
 
-* {
-  font-family: "Ubuntu Mono", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif !important;
+/* 首页文字 */
+h1.name span.clip {
+  font-size: 48px;
 }
 
+/* 顶部导航 侧边栏导航 二级标题锚导航 */
+.VPNavBarMenuLink,
+.VPSidebarItem .text,
+.VPDocAside a.outline-link {
+  font-size: 12px !important;
+}
 
+#VPSidebarNav {
+  user-select: none;
+}
+
+/* h2 动画 */
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes color {
+  0% {
+    color: red;
+  }
+
+  15% {
+    color: orange;
+  }
+
+  30% {
+    color: yellow;
+  }
+
+  45% {
+    color: green;
+  }
+
+  60% {
+    color: cyan;
+  }
+
+  75% {
+    color: blue;
+  }
+
+  90% {
+    color: purple;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+/* 自定义标题 */
+.vp-doc h1 {
+  text-align: center;
+  font-size: 24px !important;
+  text-shadow: 0 0 2px #686868, 0 1px 1px #ddd, 0 2px 1px #d6d6d6, 0 3px 1px #ccc, 0 4px 1px #c5c5c5, 0 5px 1px #c1c1c1, 0 6px 1px #bbb, 0 7px 1px #777, 0 8px 3px hsl(0deg 0% 39% / 40%), 0 9px 5px hsl(0deg 0% 39% / 10%), 0 10px 7px hsl(0deg 0% 39% / 15%), 0 11px 9px hsl(0deg 0% 39% / 20%), 0 12px 11px hsl(0deg 0% 39% / 25%), 0 13px 15px hsl(0deg 0% 39% / 30%);
+}
+
+.vp-doc h1 * {
+  text-shadow: none;
+}
+
+.vp-doc h2 {
+  animation: hue 7s linear infinite, color 7s linear infinite;
+  margin: 1.4em 0 1em;
+  padding: .1em 0 .1em .2em;
+  border-radius: 4px;
+  color: #FFF;
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);
+  font-size: 20px !important;
+}
+
+.vp-doc h3 {
+  margin: 1em 0 0;
+  font-size: 16px !important;
+}
+
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  font-size: 14px !important;
+}
+
+.vp-doc p {
+  margin: .8em 0;
+  line-height: 1.8em;
+}
+
+/* 自定义列表和代码框 */
+.vp-doc ul,
+.vp-doc ol,
+.vp-doc div[class*='language-'] {
+  margin: 1em 0;
+}
+
+.vp-doc li+li {
+  margin-top: .2em;
+}
+
+.vp-doc div[class*='language-'] * {
+  font-size: 12px;
+}
+
+.vp-doc [class*='language-'] code {
+  padding: 0 1.5em;
+}
+
+.vp-doc [class*='language-'] pre {
+  padding: 1em 0;
+}
+
+.vp-doc h3 code,
+.vp-doc h4 code,
+.vp-doc h5 code,
+.vp-doc h6 code {
+  background-color: #e7e7e7;
+}
+
+/* 自定义 info tip warning danger */
+.vp-doc div.custom-block ul,
+.vp-doc div.custom-block ol {
+  line-height: 1.5em;
+}
+
+.vp-doc div.custom-block * {
+  font-size: 13px !important;
+}
+
+/* 自定义表格 */
+.vp-doc th,
+.vp-doc td {
+  padding: .2em .5em;
+}
+
+/* medium-zoom 插件配置 */
 .medium-zoom-overlay {
   z-index: 20;
 }

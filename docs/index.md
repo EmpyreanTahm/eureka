@@ -2,19 +2,13 @@
 layout: home
 
 hero:
-  name: ευρηκα
-  text: Μη μου τους κύκλους τάραττε!
-  tagline: ---´Αρχιμήδης
-  image:
-    src: /`Αρχιμήδης.png
-    alt: Αρχιμήδης
+  name: EϒPHKA!
+  text: num = Δ + Δ + Δ
+  tagline: 面向面试，搭建知识库
   actions:
     - theme: brand
       text: Get Started
       link: /算法/
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/GeekKery/eureka
 
 features:
   - icon: 🍚
@@ -46,34 +40,4 @@ features:
     details: 提供给用户更好的体验。
     link: '/性能优化/index'
   - icon: ✍️
-    title: 随笔
-    details: 沵恏，迣鎅。
-    link: '/随笔/index'
 ---
-
-<script setup>
-import {
-  VPTeamPage,
-  VPTeamPageTitle,
-  VPTeamMembers
-} from 'vitepress/theme';
-
-const members = [
-  {
-    avatar: '/avatar-GeekKery.png',
-    name: 'GeekKery',
-    title: '行远自迩，登高自卑',
-    links: [
-      { icon: 'github', link: 'https://github.com/GeekKery' },
-      { icon: 'youtube', link: 'https://space.bilibili.com/389697113' },
-    ]
-  },
-]
-</script>
-
-<VPTeamPage>
-  <VPTeamPageTitle>
-    <template #title>About me</template>
-  </VPTeamPageTitle>
-  <VPTeamMembers :members="members"/>
-</VPTeamPage>
