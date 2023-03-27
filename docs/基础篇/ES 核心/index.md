@@ -2,12 +2,13 @@
 
 ECMAScript 是一种 ECMA（European Computer Manufacturers Association，欧洲计算机制造商协会）在标准 [ECMA-262](https://262.ecma-international.org/) 中定义的脚本语言规范，一般也简称为 ES。
 
-任何语言都可以实现 ES 规范。JavaScript 和 Node.js 都是实现了 ES 规范的语言，两者在不同的宿主环境中运行。
+ES 是弱类型的、动态的语言，这意味着在脚本的生命周期内，变量的**值**和**数据类型**都可能发生变化。任何语言都可以实现 ES 规范。JavaScript 和 Node.js 都是实现了 ES 规范的语言，两者在不同的宿主环境中运行。
 
 完整的 JavaScript 实现包含：
 - 核心：ES，包括 ECMAScript 标准定义的语法、类型、语句、关键字、保留字、操作符和全局对象
 - 文档对象模型：DOM，由 W3C 定义标准
 - 浏览器对象模型：BOM，长久以来缺乏规范，W3C 希望将 BOM 标准化，因此 HTML5 规范中有一部分涵盖了 BOM 的主要内容
+
 
 ## 使用 JavaScript
 

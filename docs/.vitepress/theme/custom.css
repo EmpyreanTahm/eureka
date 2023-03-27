@@ -68,6 +68,7 @@ h1.name span.clip {
 
 /* 自定义标题 */
 .vp-doc h1 {
+  margin-bottom: 1em;
   text-align: center;
   font-size: 24px !important;
   text-shadow: 0 0 2px #686868, 0 1px 1px #ddd, 0 2px 1px #d6d6d6, 0 3px 1px #ccc, 0 4px 1px #c5c5c5, 0 5px 1px #c1c1c1, 0 6px 1px #bbb, 0 7px 1px #777, 0 8px 3px hsl(0deg 0% 39% / 40%), 0 9px 5px hsl(0deg 0% 39% / 10%), 0 10px 7px hsl(0deg 0% 39% / 15%), 0 11px 9px hsl(0deg 0% 39% / 20%), 0 12px 11px hsl(0deg 0% 39% / 25%), 0 13px 15px hsl(0deg 0% 39% / 30%);
@@ -153,10 +154,10 @@ h1.name span.clip {
 }
 
 /* 自定义表格 */
-.vp-doc th,
+/* .vp-doc th,
 .vp-doc td {
   padding: .2em .5em;
-}
+} */
 
 /* medium-zoom 插件配置 */
 .medium-zoom-overlay {
