@@ -226,3 +226,6 @@ dist
 
 # .vitepress cache
 docs/.vitepress/cache/
+
+# temporary file
+temp.*
