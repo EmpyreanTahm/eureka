@@ -114,6 +114,12 @@ h1.name span.clip {
 .vp-doc ul,
 .vp-doc ol {
   margin: 0.4em 0;
+  padding-left: 1em;
+  list-style-position: inside;
+}
+
+.vp-doc ul {
+  list-style-type: circle;
 }
 
 .vp-doc div[class*='language-'] {

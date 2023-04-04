@@ -24,7 +24,7 @@ export default {
             { "text": "作用域和闭包", "link": "/基础篇/ES 核心/作用域和闭包" },
             { "text": "this 机制", "link": "/基础篇/ES 核心/this 机制" },
             { "text": "原型和继承", "link": "/基础篇/ES 核心/原型和继承" },
-            { "text": "内存回收机制", "link": "/基础篇/ES 核心/内存回收机制" },
+            { "text": "浅谈 GC", "link": "/基础篇/ES 核心/浅谈 GC" },
           ]
         },
         {
