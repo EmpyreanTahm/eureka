@@ -127,7 +127,7 @@ h1.name span.clip {
 }
 
 .vp-doc li+li {
-  margin-top: .2em;
+  /* margin-top: .2em; */
 }
 
 .vp-doc div[class*='language-'] * {
