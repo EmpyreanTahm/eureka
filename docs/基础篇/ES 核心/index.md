@@ -65,7 +65,7 @@ ES 是弱类型的、动态的语言，这意味着在脚本的生命周期内�
 
 `defer` 脚本应该在 `DOMContentLoaded` 事件之前执行完毕。若有多个延迟脚本，理论上将按其在文档中的位置顺序执行。但在《JavaScript 高级程序设计》第 3、4 版中都有说明，延迟脚本的实际执行顺序并不确定，保证页面至多一个 `defer` 脚本是最佳实践。
 
-![async-defer](/ES%20核心-前言/async-defer.jpg)
+![async-defer](/ES核心-前言/async-defer.jpg)
 
 :::tip 补充
 当**初始的** HTML 文档被完全加载和解析完成之后，`DOMContentLoaded` 事件被触发，而无需等待样式表、图像和子框架的完全加载。
