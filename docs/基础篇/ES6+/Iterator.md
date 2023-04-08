@@ -1,23 +1,25 @@
 # Iterator
 
-在 ES6 之前，遍历数据的方案主要是 `for/while`、`forEach`、`for...in` 等。在面对某一特定类型的数据时，有些方案无法使用：
+在 ES6 之前，可通过多种手段遍历某一类型的数据：
 - 字符串：`for/while`、`for...in`
 - 数组：`for/while`、`forEach`、`for...in`
 - 对象：`for...in`
 
+:::warning 注意
 使用 `for...in` 遍历对象时，不仅会遍历对象自身的可枚举属性，也会遍历对象原型链上的新增属性，这往往需要通过 `hasOwnProperty()` 限制遍历范围。
+:::
 
-在 ES5 的时代，集合数据无法使用统一的遍历方法进行数据获取。ES6 提供了 `for...of` 循环，作为遍历所有数据结构的统一方法。实际上，`for...of` 循环只是语法糖，其背后的机制是 Iterator。
+由于 ES5 的集合数据无法使用统一的遍历方法进行数据获取，因此 ES6 提供了 `for...of` 循环作为遍历所有数据结构的统一方法。事实上，`for...of` 循环只是语法糖，其背后的执行机制是 Iterator。
 
 ## `[Symbol.iterator]`
 
 Iterator 意为迭代器，本质上是一种接口，为不同数据结构提供统一的数据访问机制。
 
-在 ES 中，对象都有一个特殊的 `[Symbol.iterator]` 属性，该属性指向一个**迭代器方法**，实现 Iterator 接口等价于实现 `[Symbol.iterator]` 属性指向的迭代器方法。
+在 ES6 中，对象都有一个特殊的 `[Symbol.iterator]` 属性，该属性指向一个**迭代器方法**，实现 Iterator 接口等价于实现 `[Symbol.iterator]` 属性指向的迭代器方法。
 
 ### 可迭代对象
 
-实现 Iterator 接口的对象叫做**可迭代对象**，任何可迭代对象都可以通过 `for...of` 遍历。实际上，Iterator 接口的主要作用就是供 `for...of` 消费。
+实现了 Iterator 接口的对象叫做**可迭代对象**，可迭代对象都可以通过 `for...of` 遍历。实际上，Iterator 接口的主要作用就是供 `for...of` 消费。
 
 ```JS
 function isIterable(o) {
@@ -100,9 +102,9 @@ console.log(iterator.next()) // {done: true, value: undefined}
 
 ### `for...of`
 
-当执行 `for...of` 时，引擎首先调用遍历对象的 “迭代器方法”，依次执行其返回的 `next()` 方法，并将返回对象的 `value` 赋值给 `for...of` 内的变量，当 `done` 为 `true` 时遍历结束。
+当执行 `for...of` 时，会首先调用对象的迭代器方法返回迭代器对象，并依次执行迭代器对象的 `next()` 方法，并将 `next()` 执行后返回对象的 `value` 赋值给 `for...of` 内的变量，当 `done` 为 `true` 时遍历结束。
 
-`for...of` 消费 Iterator 接口时，可以通过 `break` 或 `throw` 抛出异常来中断遍历。这两种方式在终止遍历时，会先执行迭代器对象的 `return()` 方法，该方法必须返回一个对象。
+`for...of` 消费 Iterator 接口时，可以通过 `break` 或 `throw` 抛出异常来中断遍历。这两种方式在终止遍历时，会优先执行（如果有该方法）迭代器对象的 `return()` 方法，该方法必须返回一个对象。
 
 ```JS
 Object.prototype[Symbol.iterator] = function () {
@@ -134,7 +136,7 @@ for (const v of obj) {
 
 ### 解构赋值
 
-解构赋值可迭代对象时，会默认调用迭代器方法。普通对象由于是不可迭代对象，解构赋值会报错。
+解构赋值可迭代对象时，会默认调用迭代器方法。普通对象是不可迭代对象，解构赋值会报错。
 
 ```JS
 const str = 'eureka'
@@ -164,16 +166,16 @@ console.log([...obj]) // Uncaught TypeError: obj is not iterable
 
 ### 作为数据源
 
-某些 API 方法接收参数是一个数组时，会默认调用其迭代器，如 `new Map()`、`new Set()` 和 `Array.from()` 等。
+某些 API 方法接收参数是一个数组时，会默认调用其迭代器方法，如 `new Map()`、`new Set()` 和 `Array.from()` 等。
 
 ### `yield`
 
-使用 `yield` 关键字时也会调用迭代器方法。`yield` 属性 Generator 生成器的内容，Generator 生成器可以作为生成迭代器的语法糖使用。
+使用 `yield` 关键字时也会调用迭代器方法。`yield` 属于 Generator 生成器的内容，Generator 生成器可以作为生成迭代器的语法糖使用。
 
 ## 总结
 
 - `for...of` 是 ES6 提供的一种统一遍历数据的语法，其内部执行机制是 Iterator
 - Iterator 本身是一个接口，实现该接口，就是实现对象的 `[Symbol.iterator]` 属性指向的迭代器方法
-- 迭代器方法调用后返回迭代器对象，主要包含 `next()` 和 `return()` 方法
+- 迭代器方法调用后返回迭代器对象，主要包含 `next()` 和 可选的 `return()` 方法
   - `next()` 方法用于返回值和遍历是否结束的状态
-  - `return()` 方法在 `break`、`throw new Error()` 终止遍历时，会优先调用
+  - `return()` 方法在 `break`、`throw new Error()` 终止遍历时，会被优先调用
