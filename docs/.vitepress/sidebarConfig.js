@@ -32,8 +32,8 @@ export default {
           collapsed: false,
           "items": [
             { "text": "数组", "link": "/基础篇/ES6+/数组" },
-            { "text": "Iterator 接口", "link": "/基础篇/ES6+/Iterator 接口" },
-            { "text": "Generator 函数", "link": "/基础篇/ES6+/Generator 函数" },
+            { "text": "Iterator", "link": "/基础篇/ES6+/Iterator" },
+            { "text": "Generator", "link": "/基础篇/ES6+/Generator" },
             { "text": "Promise", "link": "/基础篇/ES6+/Promise" },
             { "text": "async await", "link": "/基础篇/ES6+/async await" },
           ]
