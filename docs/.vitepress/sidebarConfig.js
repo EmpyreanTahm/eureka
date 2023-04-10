@@ -33,9 +33,8 @@ export default {
           "items": [
             { "text": "数组", "link": "/基础篇/ES6+/数组" },
             { "text": "Iterator", "link": "/基础篇/ES6+/Iterator" },
-            { "text": "Generator", "link": "/基础篇/ES6+/Generator" },
             { "text": "Promise", "link": "/基础篇/ES6+/Promise" },
-            { "text": "async await", "link": "/基础篇/ES6+/async await" },
+            { "text": "Generator", "link": "/基础篇/ES6+/Generator" },
           ]
         },
         {

@@ -79,20 +79,20 @@ Object.prototype[Symbol.iterator] = function () { // 为所有对象实现 Itera
   let i = 0
   return {
     next: function () {
-      let done = i >= values.length
-      let value = !done ? values[i++] : undefined
+      const done = i >= values.length
+      const value = !done ? values[i++] : undefined
       return { done, value }
     }
   }
 }
 
-const obj = { 1: 'a', 2: 'b' }
-for (const v of obj) {
-  console.log(v) // a \n b
+const o = { a: 1, b: 2 }
+for (const v of o) {
+  console.log(v) // 1 \n 2
 }
-const iterator = obj[Symbol.iterator]()
-console.log(iterator.next()) // {done: false, value: 'a'}
-console.log(iterator.next()) // {done: false, value: 'b'}
+const iterator = o[Symbol.iterator]()
+console.log(iterator.next()) // {done: false, value: 1}
+console.log(iterator.next()) // {done: false, value: 2}
 console.log(iterator.next()) // {done: true, value: undefined}
 ```
 
@@ -108,12 +108,14 @@ console.log(iterator.next()) // {done: true, value: undefined}
 
 ```JS
 Object.prototype[Symbol.iterator] = function () {
-  const values = Object.values(this)
-  let i = 0
+  const o = this
+  const keys = Object.keys(o)
+  let i = -1
   return {
     next: function () {
-      let done = i >= values.length
-      let value = !done ? values[i++] : undefined
+      const k = keys[++i]
+      const done = i >= keys.length
+      const value = !done ? [k, o[k]] : undefined
       return { done, value }
     },
     return() {
@@ -122,15 +124,14 @@ Object.prototype[Symbol.iterator] = function () {
     }
   }
 }
-
-const obj = { 1: 'a', 2: 'b', 3: 'c' }
-for (const v of obj) {
-  console.log(v) // a
-  if (v === 'a') break
+const o = { a: 1, b: 2 }
+for (const [k, v] of o) {
+  console.log(v) // 1
+  if (v === 1) break
 }
-for (const v of obj) {
-  console.log(v) // a
-  if (v === 'a') throw new Error()
+for (const [k, v] of o) {
+  console.log(v) // 1
+  if (v === 1) throw new Error() // 打印 'STOP' 后才抛出异常
 }
 ```
 
