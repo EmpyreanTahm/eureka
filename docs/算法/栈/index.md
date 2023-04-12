@@ -5,12 +5,12 @@
 ![stack-demo](/算法/stack-demo.png)
 
 功能完整的栈结构需要具备以下功能：
-- push：向栈添加元素
-- pop：从栈移除元素
-- peek：查看栈顶元素
-- size：查看栈的大小，即栈元素个数
-- isEmpty：检查栈是否为空
-- clear：清空栈元素
+- `push()`：向栈添加元素
+- `pop()`：从栈移除元素
+- `peek()`：查看栈顶元素
+- `size()`：查看栈的大小，即栈元素个数
+- `isEmpty()`：检查栈是否为空
+- `clear()`：清空栈元素
 
 在 ES 中，一般用数组实现栈的数据结构：
 
@@ -40,7 +40,12 @@ class Stack {
 }
 
 const stack = new Stack()
-console.log(stack._items) // []
+stack.push(1)
+stack.push(2)
+stack.push(3)
+console.log(stack._items) // [1, 2, 3]
+stack.pop()
+console.log(stack._items) // [1, 2]
 ```
 
 封装完好的类不应该暴露出 `_items` 私有属性，以确保**栈以栈的形式运行**。ES 中没有私有变量的概念，以 `_` 开头命名变量只是一种约定俗成的习惯，表明该变量 **“应该”** 是私有方法或属性。在 TypeScript 中，提供给类属性和方法的 `private` 修饰符也只能在编译时生效。
