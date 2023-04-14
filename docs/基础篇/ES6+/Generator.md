@@ -219,7 +219,7 @@ runner.next()
 
 `async` 函数可以看作 Generator 函数的语法糖，`await` 表达式表明其后跟的是异步任务，需要等待异步任务执行完成，再继续执行 `async` 主体内容。
 
-`async` 函数以更舒适的方式使用 Promise，前述代码用 `async` 函数改写：
+`async` 函数以更舒适的方式使用 `Promise`，前述代码用 `async` 函数改写：
 
 ```JS
 async function main() {

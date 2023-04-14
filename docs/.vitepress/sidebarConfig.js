@@ -33,21 +33,13 @@ export default {
           "items": [
             { "text": "数组", "link": "/基础篇/ES6+/数组" },
             { "text": "Iterator", "link": "/基础篇/ES6+/Iterator" },
+            { "text": "Event Loop", "link": "/基础篇/ES6+/Event Loop" },
             { "text": "Promise", "link": "/基础篇/ES6+/Promise" },
             { "text": "Generator", "link": "/基础篇/ES6+/Generator" },
+            { "text": "模块化", "link": "/基础篇/ES6+/模块化" },
+            { "text": "base64", "link": "/基础篇/ES6+/base64" },
           ]
         },
-        {
-          "text": "♾️ ES 进阶",
-          collapsed: false,
-          "items": [
-            { "text": "事件循环", "link": "/基础篇/ES 进阶/事件循环" },
-            { "text": "异步编程", "link": "/基础篇/ES 进阶/异步编程" },
-            { "text": "模块化", "link": "/基础篇/ES 进阶/模块化" },
-            { "text": "模块循环引用解决方案", "link": "/基础篇/ES 进阶/模块循环引用解决方案" },
-            { "text": "base64", "link": "/基础篇/ES 进阶/base64" },
-          ]
-        }
       ]
     }],
     "/框架/": [{
@@ -192,19 +184,19 @@ export default {
           ]
         },
         {
+          "text": "♻️ 链表",
+          collapsed: false,
+          "items": [
+            { "text": "2.两数相加", "link": "/算法/链表/2.两数相加" },
+          ]
+        },
+        {
           "text": "🎭 Hash Table",
           collapsed: false,
           "items": [
             { "text": "1.两数之和", "link": "/算法/Hash Table/1.两数之和" },
           ]
         },
-        {
-          "text": "♻️ Linked List",
-          collapsed: false,
-          "items": [
-            { "text": "2.两数相加", "link": "/算法/Linked List/2.两数相加" },
-          ]
-        }
       ]
     }],
     "/设计模式/": [{
