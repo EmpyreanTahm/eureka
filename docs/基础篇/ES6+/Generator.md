@@ -217,7 +217,9 @@ runner.next()
 
 ## `async` 函数
 
-`async` 函数可以看作 Generator 函数的语法糖，`await` 表达式表明其后跟的是异步任务，需要等待异步任务执行完成，再继续执行 `async` 主体内容。
+`async` 函数的实现基于 Generator 函数，在此基础上使用 `Promise` 作为 `await` 的返回值。
+
+`async` 函数会将函数体转换为一个状态机，通过 `yield` 关键字将函数的执行过程分成多个阶段。当执行到 `await` 关键字时，`async` 函数会暂停执行，并返回一个 `Promise` 对象。当 `Promise` 对象的状态变为 `fulfilled` 时，`async` 函数会将 `Promise` 对象的结果作为 `yield` 表达式的值，并恢复执行。如果 `Promise` 对象的状态变为 `rejected`，`async` 函数会抛出一个错误，并将错误传递给 `try/catch` 语句。
 
 `async` 函数以更舒适的方式使用 `Promise`，前述代码用 `async` 函数改写：
 
