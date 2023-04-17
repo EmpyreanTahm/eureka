@@ -37,7 +37,6 @@ export default {
             { "text": "Promise", "link": "/基础篇/ES6+/Promise" },
             { "text": "Generator", "link": "/基础篇/ES6+/Generator" },
             { "text": "模块化", "link": "/基础篇/ES6+/模块化" },
-            { "text": "base64", "link": "/基础篇/ES6+/base64" },
           ]
         },
       ]
