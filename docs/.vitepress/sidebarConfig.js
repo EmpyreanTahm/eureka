@@ -49,20 +49,14 @@ export default {
           "items": [
             { "text": "响应式原理", "link": "/框架/Vue2/响应式原理" },
             { "text": "虚拟 DOM", "link": "/框架/Vue2/虚拟 DOM" },
-            { "text": "模板编译原理", "link": "/框架/Vue2/模板编译原理" },
+            { "text": "模板编译", "link": "/框架/Vue2/模板编译" },
             { "text": "生命周期", "link": "/框架/Vue2/生命周期" },
             { "text": "指令", "link": "/框架/Vue2/指令" },
             { "text": "过滤器", "link": "/框架/Vue2/过滤器" },
-            { "text": "data 是函数而不是对象的原因", "link": "/框架/Vue2/data 是函数而不是对象的原因" },
-            { "text": "v-model 语法糖", "link": "/框架/Vue2/v-model 语法糖" },
             { "text": "keep-alive", "link": "/框架/Vue2/keep-alive" },
-            { "text": "nextTick", "link": "/框架/Vue2/nextTick" },
             { "text": "组件通信", "link": "/框架/Vue2/组件通信" },
-            { "text": "页面闪烁问题", "link": "/框架/Vue2/页面闪烁问题" },
             { "text": "vuex", "link": "/框架/Vue2/vuex" },
-            { "text": "AST", "link": "/框架/Vue2/AST" },
             { "text": "路由模式", "link": "/框架/Vue2/路由模式" },
-            { "text": "路由保存滚动位置", "link": "/框架/Vue2/路由保存滚动位置" },
           ]
         },
         {
@@ -76,7 +70,6 @@ export default {
     }],
     "/工具/": [{
       "items": [
-        { "text": "Tips", "link": "/工具/" },
         {
           "text": "浏览器",
           collapsed: false,
