@@ -60,7 +60,6 @@ export default {
             { "text": "组件通信", "link": "/框架/Vue2/组件通信" },
             { "text": "页面闪烁问题", "link": "/框架/Vue2/页面闪烁问题" },
             { "text": "vuex", "link": "/框架/Vue2/vuex" },
-            { "text": "Diff 算法", "link": "/框架/Vue2/Diff 算法" },
             { "text": "AST", "link": "/框架/Vue2/AST" },
             { "text": "路由模式", "link": "/框架/Vue2/路由模式" },
             { "text": "路由保存滚动位置", "link": "/框架/Vue2/路由保存滚动位置" },
