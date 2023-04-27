@@ -52,7 +52,6 @@ export default {
             { "text": "模板编译", "link": "/框架/Vue2/模板编译" },
             { "text": "生命周期", "link": "/框架/Vue2/生命周期" },
             { "text": "组件通信", "link": "/框架/Vue2/组件通信" },
-            { "text": "vuex", "link": "/框架/Vue2/vuex" },
             { "text": "路由模式", "link": "/框架/Vue2/路由模式" },
           ]
         },

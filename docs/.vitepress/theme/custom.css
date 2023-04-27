@@ -136,6 +136,7 @@ h1.name span.clip {
 
 .vp-doc [class*='language-'] code {
   padding: 0 1.5em;
+  line-height: 1.6em;
 }
 
 .vp-doc [class*='language-'] pre {
