@@ -73,9 +73,7 @@ export default {
             { "text": "事件流与事件委托", "link": "/工具/浏览器/事件流与事件委托" },
             { "text": "本地存储机制", "link": "/工具/浏览器/本地存储机制" },
             { "text": "跨域", "link": "/工具/浏览器/跨域" },
-            { "text": "重绘和回流", "link": "/工具/浏览器/重绘和回流" },
             { "text": "关键渲染路径", "link": "/工具/浏览器/关键渲染路径" },
-            { "text": "window.requestAnimationFrame", "link": "/工具/浏览器/window.requestAnimationFrame" },
           ]
         },
         {
