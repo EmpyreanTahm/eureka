@@ -143,6 +143,15 @@ h1.name span.clip {
   padding: 1em 0;
 }
 
+.vp-doc [class*='language-']>button.copy {
+  width: 30px;
+  height: 30px;
+}
+
+.vp-doc [class*='language-']>button.copied::before {
+  height: 30px !important;
+}
+
 .vp-doc h3 code,
 .vp-doc h4 code,
 .vp-doc h5 code,

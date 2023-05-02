@@ -111,19 +111,13 @@ export default {
     }],
     "/网络和安全/": [{
       "items": [
-        { "text": "Tips", "link": "/网络和安全/" },
         {
           "text": "网络",
           "items": [
             { "text": "HTTP 缓存机制", "link": "/网络和安全/网络/HTTP 缓存机制" },
             { "text": "HTTP 版本变迁", "link": "/网络和安全/网络/HTTP 版本变迁" },
-            { "text": "HTTP 常见状态码", "link": "/网络和安全/网络/HTTP 常见状态码" },
-            { "text": "CDN", "link": "/网络和安全/网络/CDN" },
-            { "text": "正向代理和反向代理", "link": "/网络和安全/网络/正向代理和反向代理" },
             { "text": "TCP 和 UDP", "link": "/网络和安全/网络/TCP 和 UDP" },
-            { "text": "三次握手和四次挥手", "link": "/网络和安全/网络/三次握手和四次挥手" },
             { "text": "浅析 HTTPS", "link": "/网络和安全/网络/浅析 HTTPS" },
-            { "text": "URL 输入地址到看到页面的过程", "link": "/网络和安全/网络/URL 输入地址到看到页面的过程" }
           ]
         },
         {
