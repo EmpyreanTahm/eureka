@@ -123,8 +123,8 @@ export default {
         {
           "text": "安全",
           "items": [
-            { "text": "XSS（Cross-Site Scripting）", "link": "/网络和安全/安全/XSS（Cross-Site Scripting）" },
-            { "text": "CSRF（Cross-Site Rquest Forgery）", "link": "/网络和安全/安全/CSRF（Cross-Site Rquest Forgery）" },
+            { "text": "XSS", "link": "/网络和安全/安全/XSS" },
+            { "text": "CSRF", "link": "/网络和安全/安全/CSRF" },
             { "text": "中间人攻击", "link": "/网络和安全/安全/中间人攻击" },
             { "text": "DDos 攻击", "link": "/网络和安全/安全/DDos 攻击" }
           ]
