@@ -125,7 +125,6 @@ export default {
           "items": [
             { "text": "XSS", "link": "/网络和安全/安全/XSS" },
             { "text": "CSRF", "link": "/网络和安全/安全/CSRF" },
-            { "text": "中间人攻击", "link": "/网络和安全/安全/中间人攻击" },
             { "text": "DDos 攻击", "link": "/网络和安全/安全/DDos 攻击" }
           ]
         },
@@ -177,7 +176,6 @@ export default {
     }],
     "/设计模式/": [{
       "items": [
-        { "text": "Tips", "link": "/设计模式/" },
         { "text": "单例模式", "link": "/设计模式/单例模式" },
         { "text": "代理模式", "link": "/设计模式/代理模式" },
         { "text": "发布订阅", "link": "/设计模式/发布订阅" },
@@ -186,10 +184,7 @@ export default {
     }],
     "/性能优化/": [{
       "items": [
-        { "text": "Tips", "link": "/性能优化/" },
-        { "text": "单页应用 SEO", "link": "/性能优化/单页应用 SEO" },
-        { "text": "懒加载", "link": "/性能优化/懒加载" },
-        { "text": "防抖和节流", "link": "/性能优化/防抖和节流" }
+
       ]
     }],
     "/随笔/": [{
